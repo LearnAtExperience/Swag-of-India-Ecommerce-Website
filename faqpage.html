@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Our Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>FAQ - Swag of India</title>
+  <!-- Favicon for the title -->
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/825/825561.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Header start -->
+  <header role="article" aria-label="navigationBar">
+    <!-- Navbar-1 Start -->
+    <nav class="navbar navbar-expand-lg nav-main" role="navigation" aria-label="primary">
+      <div class="nav-main-menus container-fluid">
+        <div class="social-icons">
+          <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
+          <a href="#"><span class="social-icon"><i class="fab fa-youtube"></i></span></a>
+          <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
+        </div>
+        <div class="search-box-container">
+          <input type="search" name="search" id="search" class="search-box" placeholder="Search" aria-label="search">
+          <a href="#"><span class="search-icon"><i class="fal fa-search"></i></span></a>
+        </div>
+        <!-- Bootstrap Collapse for Navbar-1 -->
+        <button class="navbar-toggler navbar-light" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-one" id="mainMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link phone-no" id="phone-no"><span class="call-icon"><i
+                    class="fas fa-phone-alt"></i></span>
+                +91 7868884536
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sell on Company</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Download App</a>
+            </li>
+          </ul>
+          <div class="language-container">
+            <span class="lang-img-container">
+              <img src="Images/indiaflag.png" alt="US Flag" class="lang-img" id="lang-img">
+            </span>
+            <select name="lang" id="lang" class="language-select">
+              <option value="India" id="eng" class="lang-item" selected>India</option>
+              <option value="UK" id="hin" class="lang-item">UK</option>
+              <option value="Canada" id="tam" class="lang-item">Canada</option>
+              <option value="US" id="us" class="lang-item">US</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar-1 end -->
+    <!-- Navbar-2 start -->
+    <nav class="navbar navbar-expand-lg bg-white nav-sub border-bottom" id="nav-sub" role="navigation"
+      aria-label="secondary">
+      <div class="container-fluid nav-sub-container">
+        <!-- Site logo and Name Container -->
+        <div class="logo-name-container">
+          <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/3552/3552359.png" alt="" class="site-logo">
+          </div>
+          <div class="site-name">
+            <h3>Swag of India</h3>
+          </div>
+        </div>
+        <!-- Site name and logo container end-->
+        <!--Bootstrap Collapse for  Navbar-2-->
+        <button class="navbar-toggler navbar-light hamburger-2" data-bs-toggle="collapse" data-bs-target="#subMenu"
+          role="button" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse sub-collapse" id="subMenu">
+          <ul class="navbar-nav navSub">
+            <li class="nav-item sub-item">
+              <a href="index.html" class="nav-link sub-link">Home</a>
+            </li>
+            <!-- Bootstrap Dropdown for a menu-item -->
+            <li class="nav-item dropdown sub-item">
+              <a href="#" class="nav-link dropdown-toggle sub-link" role="button" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="productListPage.html">Men</a></li>
+                <li><a class="dropdown-item" href="productListPage.html">Women</a></li>
+                <li><a class="dropdown-item" href="productListPage.html">Ethnic</a></li>
+                <li><a class="dropdown-item" href="productListPage.html">Sports</a></li>
+              </ul>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="myOrderPage.html" class="nav-link sub-link">Orders</a>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="cartPage.html" class="nav-link sub-link">Cart</a>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="wishlistPage.html" class="nav-link sub-link">Wishlist</a>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="profilepage.html" class="nav-link sub-link">Profile</a>
+            </li>
+          </ul>
+          <button type="button" class="signin-btn" role="button" aria-expanded="false" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">SIGN IN</button>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <!-- Navbar-2 end -->
+  </header>
+  <!-- Header end -->
+
+  <!-- Bootstrap Breadcrumb -->
+
+  <section class="container-fluid directory">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="root-directory">Home</a></li>
+        <li class="breadcrumb-item active current-directory" aria-current="page">FAQ</li>
+      </ol>
+    </nav>
+
+  </section>
+
+  <!-- Bootstrap Breadcrumb ends -->
+
+  <!-- FAQ Hero section starts -->
+
+  <section class="faq-hero">
+
+    <!-- FAQ Sidebar starts -->
+
+    <label for="faq-side-slide" class="faq-lbl-slide"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="faq-side-slide">
+
+    <div class="faq-side-bar">
+
+      <!-- Menus 1 -->
+      <h6 class="faq-menu-title">TYPE OF ISSUE</h6>
+      <a href="#" class="faq-menu">
+        <p>Help with your Issues</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Help with your order</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Help with other Issues</p>
+      </a>
+
+      <!-- Menus 2 -->
+      <h6 class="faq-menu-title">HELP TOPICS</h6>
+      <a href="#" class="faq-menu">
+        <p>Order</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Cancellations and Returns</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Payment</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Shopping</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Wallet</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Insurance</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Others</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Premium</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Lorem ipsum</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Lorem ipsum</p>
+      </a>
+      <a href="#" class="faq-menu">
+        <p>Lorem ipsum</p>
+      </a>
+
+    </div>
+
+    <!-- FAQ Sidebar ends -->
+
+    <!-- Help content section starts -->
+
+    <div class="faq-help-container">
+
+      <h4 class="faq-help-con-title">HELP WITH YOUR ORDER</h4>
+
+      <!-- Bootstrap Accordian starts -->
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <!-- Item 1 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne">
+            <span class="faq-ques-title">Do I need to create an account in order to purchase with
+              you?
+            </span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam accusamus doloremque. Ipsum, quae!
+              Tenetur similique enim, ea nemo at ex quidem quibusdam repellat eius blanditiis, fuga voluptatum porro
+              ducimus architecto iste nesciunt eveniet maiores in expedita! Laudantium libero in dolore voluptate nisi
+              reiciendis adipisci quibusdam tempora. Perferendis, exercitationem ab.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo">
+            <span class="faq-ques-title">How do I create an account?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quam accusamus doloremque. Ipsum, quae!
+              Tenetur similique enim, ea nemo at ex quidem quibusdam repellat eius blanditiis, fuga voluptatum porro
+              ducimus architecto iste nesciunt eveniet maiores in expedita! Laudantium libero in dolore voluptate nisi
+              reiciendis adipisci quibusdam tempora. Perferendis, exercitationem ab.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree">
+            <span class="faq-ques-title">How I order?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, facere eveniet rerum repellat sequi,
+              ducimus corporis explicabo vero ea in pariatur laboriosam consequuntur quidem ipsa libero dolorum. Fugiat
+              explicabo nobis amet atque doloremque nihil laudantium officia magni vitae, reprehenderit non optio
+              aperiam soluta consequuntur ipsam quisquam inventore a ad distinctio!
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour">
+            <span class="faq-ques-title">I have problems in adding items to my shopping cart.</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi quos, itaque dicta harum aspernatur sit
+              fuga quasi expedita? Illo nemo exercitationem vero ullam ducimus et maiores, est illum cum possimus quae
+              explicabo officiis enim delectus id dolorum, obcaecati quisquam aliquid vitae? Officiis quaerat expedita
+              enim et, reprehenderit omnis provident explicabo.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive">
+            <span class="faq-ques-title">How do I pay for my orders?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officia, asperiores odio modi corrupti
+              doloremque obcaecati magnam, id deserunt repellendus aliquam non esse reprehenderit totam quo harum
+              fugiat! Ipsum voluptatum alias, eligendi, officia fugiat sed debitis vero consectetur aperiam eius eaque
+              laboriosam sit voluptates ex nesciunt. Mollitia veritatis numquam atque.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix">
+            <span class="faq-ques-title">Can I amend and cancel my order?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis molestias repudiandae nostrum
+              inventore. Accusamus debitis, nostrum itaque officiis quos quas nemo quam, aliquid corporis perferendis,
+              distinctio eaque nisi amet accusantium neque placeat vitae eveniet nihil! Ut, at tenetur? Blanditiis sed
+              laboriosam dolor magni delectus nulla non ipsum architecto voluptatibus quisquam.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven">
+            <span class="faq-ques-title">
+              I have a discount code. How can I use it?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum neque blanditiis maxime esse
+              officiis fugiat culpa porro, quisquam vel. Consectetur aut dicta esse inventore autem libero veritatis
+              impedit vitae molestiae quidem amet atque, quaerat, animi, laborum voluptatibus beatae commodi illo
+              laboriosam ipsa corporis cumque! Excepturi nesciunt doloribus aut voluptate.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="card faq-qa">
+          <button class="card-header collapsed card-link faq-qa-btn" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight">
+            <span class="faq-ques-title">How will I know if my order is confirmed?</span>
+            <i class="fas fa-plus"></i>
+          </button>
+          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo velit eos asperiores a alias incidunt aut
+              ratione veniam, quidem, minima dolorem vero nesciunt quae earum autem tempora consequatur repellendus!
+              Ipsum nam rem animi praesentium tempore? Perferendis maiores modi quae, eligendi, minima at accusantium
+              tempore ducimus laboriosam itaque assumenda illum eius.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap Accordian ends -->
+
+    </div>
+
+    <!-- Help content section ends -->
+
+  </section>
+
+  <!-- FAQ Hero section ends -->
+
+  <!-- Utilized Bootstrap Grid system for the responsiveness/Rows and Columns -->
+  <section class="container blog" role="region" aria-label="blogs">
+    <div class="row blog-items">
+      <!-- Blog Card1 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/4289/4289742.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>100% SECURE PAYMENT</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+      <!-- Blog Card2 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/3643/3643948.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>TRUST PAY</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+      <!-- Blog Card3 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/4753/4753415.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>HELP CENTER</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+      <!-- Blog Card4 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/2097/2097276.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>SHOP ON THE GO</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Grid System/Rows and Column end -->
+  <!-- Footer start/Pages/Used Rows and Colums -->
+  <footer class="container footer-pages" role="article" aria-label="pages and payments gateways">
+    <!-- Row containing several columns -->
+    <div class="row pages">
+      <!-- Pages Col 1 -->
+      <div class="col policy-info">
+        <h6>POLICY INFO</h6>
+        <a href="#">
+          <p>Privacy Policy</p>
+        </a>
+        <a href="#">
+          <p>Terms of Sale</p>
+        </a>
+        <a href="#">
+          <p>Terms of Use</p>
+        </a>
+        <a href="#">
+          <p>Report Abuse & Takedown Policy</p>
+        </a>
+      </div>
+      <!-- Pages Col 2 -->
+      <div class="col company">
+        <h6>COMPANY</h6>
+        <a href="#">
+          <p>About Us</p>
+        </a>
+        <a href="#">
+          <p>Core Values</p>
+        </a>
+        <a href="#">
+          <p>Careers</p>
+        </a>
+        <a href="#">
+          <p>Blog</p>
+        </a>
+        <a href="#">
+          <p>Site Map</p>
+        </a>
+      </div>
+      <!-- Pages Col 3 -->
+      <div class="col sd-business">
+        <h6>SNAPDEAL BUSINESS</h6>
+        <a href="#">
+          <p>Shopping Apps</p>
+        </a>
+        <a href="#">
+          <p>Sell on Snapdeal</p>
+        </a>
+        <a href="#">
+          <p>Advertise on Snapdeal</p>
+        </a>
+        <a href="#">
+          <p>Media Enquiries</p>
+        </a>
+        <a href="#">
+          <p>Be an Affiliate</p>
+        </a>
+      </div>
+      <!-- Pages Col 4 -->
+      <div class="col need-help">
+        <h6>NEED HELP?</h6>
+        <a href="#">
+          <p>FAQ</p>
+        </a>
+        <a href="#">
+          <p>Contact Us</p>
+        </a>
+        <a href="#">
+          <p>Online Shopping</p>
+        </a>
+      </div>
+      <!-- Pages Col 5 -->
+      <div class="col subscribe">
+        <h6>SUBSCRIBE</h6>
+        <div class="email-container">
+          <input type="email" name="email" id="email" placeholder="Your Email Address">
+          <button type="button" id="subscribe-btn">Subscribe</button>
+        </div>
+        <p>Register now to get updates on promotions and coupons. Or <a href="#" id="dapp">Download App</a></p>
+      </div>
+    </div>
+    </div>
+    <!-- Pages Rows and Columns end -->
+    <!-- Another division of the footer contains several columns -->
+    <div class="container payment-social-container">
+      <div class="payment-gateways">
+        <h6>PAYMENT</h6>
+        <div class="payment-container">
+          <!-- Gateway 1 -->
+          <a href="#">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 2 -->
+          <a href="#">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 3 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 4 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 5 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 6 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="social-container">
+        <div class="connect">
+          <h6>CONNECT</h6>
+        </div>
+        <div class="social-icons-container-1">
+          <a href="#"><span><i class="fab fa-facebook-f" id="fb"></i></span></a>
+          <a href="#"><span><i class="fab fa-youtube" id="yt"></i></span></a>
+          <a href="#"><span><i class="fab fa-twitter" id="tr"></i></span></a>
+          <a href="#"><span><i class="fab fa-instagram" id="in"></i></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Go to top icon -->
+
+  <span class="goto-top-icon" id="gotoTopCon"><i class="fas fa-chevron-circle-up" id="goto-top-icon"></i></span>
+
+  <!-- Modal Starts -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm modal-lg">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+          <section class="login-reg-container">
+            <div class="log-logo-container">
+              <img src="Images/logo.png" alt="Swag of India" class="log-logo">
+            </div>
+            <div class="log-reg">
+              <div class="toggler">
+                <button type="button" data-bs-target="#modal-carousel" data-bs-slide-to="0" class="active btn-1 change"
+                  aria-current="true" aria-label="Slide 1" id="btn-1">LOGIN</button>
+                <button type="button" data-bs-target="#modal-carousel" data-bs-slide-to="1" class="btn-2"
+                  aria-label="Slide 2" id="btn-2">CREATE
+                  ACCOUNT</button>
+              </div>
+              <div id="modal-carousel" class="carousel slide">
+                <div class="carousel-inner middle-con">
+                  <!-- Item 1 -->
+                  <div class="carousel-item active mc1">
+                    <form action="">
+                      <div class="mc">
+                        <label>Email<span>*</span></label>
+                        <input type="email" name="email" id="email-log" class="inputs" required>
+                        <label>Password<span>*</span></label>
+                        <input type="password" name="pwd" id="pwd-log" class="inputs" pattern="[A-Za-z0-9]{8,16}"
+                          title="Your Password must have 8-16 characters. You can use either uppercase or lowercase or numeric values. Special Characters not allowed."
+                          required>
+                        <button type="submit" class="sign-in btn-submit">SIGN IN</button>
+                        <a href="#" class="fpwd">
+                          <p class="fpwd1">FORGOT YOUR PASSWORD</p>
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="carousel-item mc1">
+                    <form action="">
+                      <div class="mc">
+                        <label>Username<span>*</span></label>
+                        <input type="text" name="uname" id="uname-reg" class="inputs" required>
+                        <label>Email<span>*</span></label>
+                        <input type="email" name="email" id="email-reg" class="inputs">
+                        <label>Password<span>*</span></label>
+                        <input type="password" name="email" id="email-reg" class="inputs" pattern="[A-Za-z0-9]{8,16}"
+                          title="Your Password must have 8-16 characters with atleast one uppercase letter and numeric value. Special Characters not allowed."
+                          required>
+                        <button type="submit" class="create-acc btn-submit">CREATE ACCOUNT</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="social-log">
+                <p>Or Login With</p>
+                <div class="social-log-btn-container">
+                  <a href="#" class="fbk"><i class="fab fa-facebook-f"></i><span>FACEBOOK</span></a>
+                  <a href="#" class="twtr"><i class="fab fa-twitter"></i><span>TWITTER</span></a>
+                  <a href="#" class="ggl"><i class="fab fa-google-plus-g"></i><span>GOOGLE</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Ends -->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

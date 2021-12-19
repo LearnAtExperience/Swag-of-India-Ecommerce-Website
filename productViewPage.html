@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+  <!-- jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Our Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Product View - Swag of India</title>
+  <!-- Favicon for the title -->
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/825/825561.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Header start -->
+  <header role="article" aria-label="navigationBar">
+    <!-- Navbar-1 Start -->
+    <nav class="navbar navbar-expand-lg nav-main" role="navigation" aria-label="primary">
+      <div class="nav-main-menus container-fluid">
+        <div class="social-icons">
+          <a href="#"><span class="social-icon"><i class="fab fa-facebook-f"></i></span></a>
+          <a href="#"><span class="social-icon"><i class="fab fa-youtube"></i></span></a>
+          <a href="#"><span class="social-icon"><i class="fab fa-twitter"></i></span></a>
+        </div>
+        <div class="search-box-container">
+          <input type="search" name="search" id="search" class="search-box" placeholder="Search" aria-label="search">
+          <a href="#"><span class="search-icon"><i class="fal fa-search"></i></span></a>
+        </div>
+        <!-- Bootstrap Collapse for Navbar-1 -->
+        <button class="navbar-toggler navbar-light" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu-one" id="mainMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link phone-no" id="phone-no"><span class="call-icon"><i
+                    class="fas fa-phone-alt"></i></span>
+                +91 7868884536
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sell on Company</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Download App</a>
+            </li>
+          </ul>
+          <div class="language-container">
+            <span class="lang-img-container">
+              <img src="Images/indiaflag.png" alt="US Flag" class="lang-img" id="lang-img">
+            </span>
+            <select name="lang" id="lang" class="language-select">
+              <option value="India" id="eng" class="lang-item" selected>India</option>
+              <option value="UK" id="hin" class="lang-item">UK</option>
+              <option value="Canada" id="tam" class="lang-item">Canada</option>
+              <option value="US" id="us" class="lang-item">US</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar-1 end -->
+    <!-- Navbar-2 start -->
+    <nav class="navbar navbar-expand-lg bg-white nav-sub border-bottom" id="nav-sub" role="navigation"
+      aria-label="secondary">
+      <div class="container-fluid nav-sub-container">
+        <!-- Site logo and Name Container -->
+        <div class="logo-name-container">
+          <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/3552/3552359.png" alt="" class="site-logo">
+          </div>
+          <div class="site-name">
+            <h3>Swag of India</h3>
+          </div>
+        </div>
+        <!-- Site name and logo container end-->
+        <!--Bootstrap Collapse for  Navbar-2-->
+        <button class="navbar-toggler navbar-light hamburger-2" data-bs-toggle="collapse" data-bs-target="#subMenu"
+          role="button" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse sub-collapse" id="subMenu">
+          <ul class="navbar-nav navSub">
+            <li class="nav-item sub-item">
+              <a href="index.html" class="nav-link sub-link">Home</a>
+            </li>
+            <!-- Bootstrap Dropdown for a menu-item -->
+            <li class="nav-item dropdown sub-item">
+              <a href="#" class="nav-link dropdown-toggle sub-link" role="button" id="navbarDropdown"
+                data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="productListPage.html">Men</a></li>
+                <li><a class="dropdown-item" href="productListPage.html">Women</a></li>
+                <li><a class="dropdown-item" href="productListPage.html">Ethnic</a></li>
+                <li><a class="dropdown-item" href="productListPage.html">Sports</a></li>
+              </ul>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="myOrderPage.html" class="nav-link sub-link">Orders</a>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="cartPage.html" class="nav-link sub-link">Cart</a>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="wishlistPage.html" class="nav-link sub-link">Wishlist</a>
+            </li>
+            <li class="nav-item sub-item">
+              <a href="profilepage.html" class="nav-link sub-link">Profile</a>
+            </li>
+          </ul>
+          <button type="button" class="signin-btn" role="button" aria-expanded="false" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">SIGN IN</button>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <!-- Navbar-2 end -->
+  </header>
+  <!-- Header end -->
+
+  <!-- Bootstrap Breadcrumb -->
+
+  <section class="container-fluid directory">
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" class="root-directory">Home</a></li>
+        <li class="breadcrumb-item"><a href="#" class="root-directory">Appliances</a></li>
+        <li class="breadcrumb-item active current-directory" aria-current="page">Fans</li>
+      </ol>
+    </nav>
+
+  </section>
+
+  <!-- Bootstrap Breadcrumb ends -->
+
+  <!-- Hero section  starts -->
+
+  <section class="container-fluid pro-view">
+
+    <div class="pro-img-gal">
+      <img src="images/product3@2x.png" alt="Product Image" class="gal-img">
+      <img src="images/product3@2x.png" alt="Product Image" class="gal-img">
+      <img src="images/product3@2x.png" alt="Product Image" class="gal-img">
+      <img src="images/product3@2x.png" alt="Product Image" class="gal-img">
+    </div>
+
+    <div class="pro-view-img-container">
+      <img src="Images/product3@2x.png" alt="Product Image" class="pro-view-img">
+    </div>
+
+    <div class="pro-view-det">
+
+      <p class="pro-view-name">Classic Chinos Pants</p>
+      <div class="num-rate">
+        <span class="view-rate">
+          <a href="#pv-crs">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </a>
+        </span>
+        <span class="num-rates">72,322 Ratings</span>
+        <span class="num-ques">1000+ Answered Questions</span>
+      </div>
+      <div class="pro-view-amt-con">
+        <span class="pv-amt">Rs. 2999/-</span>
+        <span class="pv-disc">Rs. 3999/-</span>
+        <span class="pv-off">(33% Off)</span>
+      </div>
+      <div class="pv-desc-con">
+        <h6 class="pv-desc-title">Short Description</h6>
+        <p class="pv-desc">
+          Black and grey checked casual shirt, has a spread collar, long roll-up sleeves, button
+          placket, curved hem, and 1 patch pocket. Black and grey checked casual shirt, has a spread collar,
+          long roll-up sleeves, button placket, curved hem, and 1 patch pocket
+        </p>
+      </div>
+      <div class="pv-sq-select-con">
+        <div class="pv-size-select-con">
+          <h6 class="pv-size-title">SELECT SIZE</h6>
+          <div class="pv-size-selector">
+            <p class="pv-size">39</p>
+            <p class="pv-size">40</p>
+            <p class="pv-size">42</p>
+            <p class="pv-size">44</p>
+          </div>
+        </div>
+        <div class="pv-qty-select-con">
+          <h6 class="pv-qty-title">QTY</h6>
+          <div class="pv-qty-selector">
+            <table class="pv-qty">
+              <tr class="pv-qty-sel">
+                <td class="pv-qty-select dec"><i class="fas fa-minus"></i></td>
+                <td class="pv-qty-select qty-ind">2</td>
+                <td class="pv-qty-select inc"><i class="fas fa-plus"></i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="ab-btn-con">
+        <button class="btn-atc">ADD TO CART</button>
+        <button class="btn-bn">BUY NOW</button>
+        <a class="atw"><i class="fal fa-heart-circle"></i></a>
+      </div>
+      <div class="pv-share">
+        <span class="pv-share-title">SHARE THIS</span>
+        <a href="#"><span class="pv-social-icon"><i class="fab fa-facebook-f"></i></span></a>
+        <a href="#"><span class="pv-social-icon"><i class="fab fa-youtube"></i></span></a>
+        <a href="#"><span class="pv-social-icon"><i class="fab fa-twitter"></i></span></a>
+      </div>
+      <div class="pv-info">
+        <div class="pv-del">
+          <span class="pv-delivery"><i class="fal fa-truck"></i></span>
+          <h6 class="pv-info-title">DELIVERY & RETURN</h6>
+        </div>
+        <div class="pv-supp">
+          <span class="pv-support"><i class="fal fa-headset"></i></span>
+          <h6 class="pv-info-title">ONLINE SUPPORT 24/7</h6>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Hero Section ends -->
+
+  <!-- About Section Starts -->
+
+  <section class="pv-about container">
+
+    <!-- Bootstrap Nav Items -->
+
+    <div class="pv-about-header">
+
+      <ul class="nav">
+        <li class="nav-item pv-nav-tab">
+          <a class="nav-link pv-nav" href="#">Description</a>
+        </li>
+        <li class="nav-item pv-nav-tab">
+          <a class="nav-link pv-nav" href="#">Sizing Guide</a>
+        </li>
+        <li class="nav-item pv-nav-tab">
+          <a class="nav-link pv-nav" href="#">Assigned Tags</a>
+        </li>
+        <li class="nav-item pv-nav-tab">
+          <a class="nav-link pv-nav" href="#">Many Custom Tabs</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Bootstrap Nav Items ends -->
+
+    <div class="pv-abt-desc container-fluid">
+
+      <h6 class="pv-about-title">Give you a complete account of the system</h6>
+
+      <p class="pv-about-info">
+        Dr trust USA professional series pulse rate and alarm function USFDA and CE approved: The
+        newly upgraded Dr Trust Finger Pulse Oximeter is an affordable and accurate way
+        to check pulse rates and blood oxygen saturation levels. Simple one-button design allows for easy operation.
+        Small portable size makes it easy to handle and carry. Helpful for
+        athletes and pilots to obtain quick and accurate oxygen saturation readings. This is the best pulse oximeter
+        available for medical professionals. The product is water resistant
+        and contains audio visual alarm
+      </p>
+
+      <p class="pv-about-info">
+        USFDA and CE approved. Dr Trust is a registered trademark of Nectar Biopharma Private Limited. We will actively
+        and aggressively pursue any parties who infringe on our
+        intellectual property rights to the maximum extent allowed by the law. All product designs, packaging designs,
+        product images and text on this page are protected by various
+        Indian and international patents and copyrights. Dr trust USA professional series pulse rate and alarm function
+        USFDA and CE approved: The newly upgraded Dr Trust Finger
+        Pulse Oximeter is an affordable and accurate way to check pulse rates and blood oxygen saturation levels. Simple
+        one-button design allows for easy operation. Small portable
+        size makes it easy to handle and carry. Helpful for athletes and pilots to obtain quick and accurate oxygen
+        saturation readings. This is the best pulse oximeter available for
+        medical professionals. The product is water resistant and contains audio visual alarm
+      </p>
+
+      <p class="pv-about-info">
+        USFDA and CE approved. Dr Trust is a registered trademark of Nectar Biopharma Private Limited. We will actively
+        and aggressively pursue any parties who infringe on our
+        intellectual property rights to the maximum extent allowed by the law. All product designs, packaging designs,
+        product images and text on this page are protected by various
+        Indian and international patents and copyrights.
+      </p>
+
+      <p class="pv-about-info">
+        USFDA and CE approved. Dr Trust is a registered trademark of Nectar Biopharma Private Limited. We will actively
+        and aggressively pursue any parties who infringe on our
+        intellectual property rights to the maximum extent allowed by the law. All product designs, packaging designs,
+        product images and text on this page are protected by various
+        Indian and international patents and copyrights. Dr trust USA professional series pulse rate and alarm function
+        USFDA and CE approved: The newly upgraded Dr Trust Finger
+        Pulse Oximeter is an affordable and accurate way to check pulse rates and blood oxygen saturation levels. Simple
+        one-button design allows for easy operation. Small portable
+        size makes it easy to handle and carry. Helpful for athletes and pilots to obtain quick and accurate oxygen
+        saturation readings. This is the best pulse oximeter available for
+        medical professionals. The product is water resistant and contains audio visual alarm
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- About Section ends -->
+
+  <!-- Review Section Starts -->
+
+  <section class="pv-review container" id="pv-review">
+
+    <div class="pv-crs" id="pv-crs">
+      <h5 class="pv-rs-title">Customer Reviews</h5>
+      <div class="num-stars">
+        <span class="pv-rs-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </span>
+        <span class="pv-rs-perc">
+          2.5 out of 5 stars
+        </span>
+      </div>
+      <div class="pv-perc-show">
+        <p class="pv-rs-num">3 Customer ratings</p>
+
+        <!-- 5 Star rating -->
+        <div class="pv-rate-pres">
+          <span class="pv-num-star high-rate">5 Star</span>
+          <div class="progress pv-crs-pres">
+            <div class="progress-bar" role="progressbar" style="width: 37%"></div>
+          </div>
+          <span class="pv-rate-perc high-rate">37%</span>
+        </div>
+
+        <!-- 4 Star rating -->
+        <div class="pv-rate-pres">
+          <span class="pv-num-star">4 Star</span>
+          <div class="progress pv-crs-pres">
+            <div class="progress-bar" role="progressbar"></div>
+          </div>
+          <span class="pv-rate-perc">0%</span>
+        </div>
+
+        <!-- 3 Star rating -->
+        <div class="pv-rate-pres">
+          <span class="pv-num-star">3 Star</span>
+          <div class="progress pv-crs-pres">
+            <div class="progress-bar" role="progressbar"></div>
+          </div>
+          <span class="pv-rate-perc">0%</span>
+        </div>
+
+        <!-- 2 Star ratings -->
+        <div class="pv-rate-pres">
+          <span class="pv-num-star">2 Star</span>
+          <div class="progress pv-crs-pres">
+            <div class="progress-bar" role="progressbar"></div>
+          </div>
+          <span class="pv-rate-perc">0%</span>
+        </div>
+
+        <!-- 1 Star rating -->
+        <div class="pv-rate-pres">
+          <span class="pv-num-star high-rate">1 Star</span>
+          <div class="progress pv-crs-pres">
+            <div class="progress-bar" role="progressbar" style="width: 63%"></div>
+          </div>
+          <span class="pv-rate-perc high-rate">63%</span>
+        </div>
+
+      </div>
+
+      <div class="pv-rtp">
+        <h5 class="rtp-title">Review this product</h5>
+        <p class="pv-rtp-st">Share your thoughts with others</p>
+        <button class="btn-pro-rw">Write a product review</button>
+      </div>
+
+    </div>
+
+    <div class="pv-rs-list">
+
+      <!-- Review 1 -->
+      <div class="pv-cr-item">
+        <div class="rwr-name-con">
+          <span class="rwr-avatar"><i class="fad fa-user-circle"></i></span>
+          <span class="rwr-name">Richard Macbeth</span>
+        </div>
+        <div class="rwr-stars">
+          <span class="rwr-star-num">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+          <span class="rw-begin">Early Delivery., Very reasonable price</span>
+        </div>
+        <div class="rw-info">
+          <p class="rw-date">Reviewed in India on 7 July 2020</p>
+          <p class="ver-purc">Verified Purchase</p>
+          <p class="rw-desc">
+            Manufacture year is 2018. So CEAT company rejected online registration for extended warranty But they
+            said this tyres are eligiblile for normal warranty for the balance 3 years. When I compare the price, I
+            found, it is reasonable
+          </p>
+          <p class="rw-desc">
+            In short, if you are looking for full warranty of 5 years with unlimited exteded warranty of six months, buy
+          </p>
+        </div>
+        <div class="pv-rw-btn-con">
+          <button class="btn-vote-rw">Helpful</button>
+          <button class="rw-otr-opt opt-spl">Comment</button>
+          <button class="rw-otr-opt">Report Abuse</button>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="pv-cr-item">
+        <div class="rwr-name-con">
+          <span class="rwr-avatar"><i class="fad fa-user-circle"></i></span>
+          <span class="rwr-name">Richard Macbeth</span>
+        </div>
+        <div class="rwr-stars">
+          <span class="rwr-star-num">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+          <span class="rw-begin">Early Delivery., Very reasonable price</span>
+        </div>
+        <div class="rw-info">
+          <p class="rw-date">Reviewed in India on 7 July 2020</p>
+          <p class="ver-purc">Verified Purchase</p>
+          <p class="rw-desc">
+            Manufacture year is 2018. So CEAT company rejected online registration for extended warranty But they
+            said this tyres are eligiblile for normal warranty for the balance 3 years. When I compare the price, I
+            found, it is reasonable
+          </p>
+          <p class="rw-desc">
+            In short, if you are looking for full warranty of 5 years with unlimited exteded warranty of six months, buy
+          </p>
+        </div>
+        <div class="pv-rw-btn-con">
+          <button class="btn-vote-rw">Helpful</button>
+          <button class="rw-otr-opt opt-spl">Comment</button>
+          <button class="rw-otr-opt">Report Abuse</button>
+        </div>
+      </div>
+
+      <a href="#" class="all-rw">See all review from India</a>
+
+    </div>
+
+  </section>
+
+  <!-- Review Section ends -->
+
+  <!-- Related Products Section starts -->
+
+  <section class="pv-rlt-pros container">
+
+    <h2 class="pv-rlt-pro-title">RELATED PRODUCTS</h2>
+
+    <div class="pv-rlt-pro-con wrapper">
+      <div class="carousel owl-carousel myCarousel">
+
+        <!-- Related Product 1 -->
+        <div class="card pv-pro-card card-1" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/product-2@2x.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 2 -->
+        <div class="card pv-pro-card card-2" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/product3@2x.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 3 -->
+        <div class="card pv-pro-card card-3" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/ProductList/product1.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 4 -->
+        <div class="card pv-pro-card card-4" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/product3@2x.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 5 -->
+        <div class="card pv-pro-card card-5" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/ProductList/product1.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 6 -->
+        <div class="card pv-pro-card card-6" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/product3@2x.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 7 -->
+        <div class="card pv-pro-card card-7" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/product-2@2x.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+        <!-- Related Product 8 -->
+        <div class="card pv-pro-card card-8" style="width: 18rem;" role="region" aria-label="product">
+          <img src="Images/ProductList/product1.png" class="card-img-top" alt="" aria-hidden="true">
+          <span class="new">NEW</span>
+          <div class="card-body product-info">
+            <p class="card-text p-name">PRODUCT NAME</p>
+            <p class="card-text p-price">
+              <span class="amt">Rs. 2999/-</span>
+              <span class="dc">Rs. 3999/-</span>
+              <span class="off">(33% Off)</span>
+            </p>
+            <p><span class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Related Product Section ends -->
+
+  <!-- Utilized Bootstrap Grid system for the responsiveness/Rows and Columns -->
+  <section class="container blog" role="region" aria-label="blogs">
+    <div class="row blog-items">
+      <!-- Blog Card1 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/4289/4289742.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>100% SECURE PAYMENT</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+      <!-- Blog Card2 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/3643/3643948.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>TRUST PAY</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+      <!-- Blog Card3 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/4753/4753415.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>HELP CENTER</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+      <!-- Blog Card4 -->
+      <div class="col blog-item col-10 col-md-6 col-sm-6 col-lg-3">
+        <div class="blog-image-container">
+          <img src="https://cdn-icons-png.flaticon.com/512/2097/2097276.png" alt="" class="blog-image"
+            aria-hidden="true">
+        </div>
+        <div class="blog-info-container">
+          <h4>SHOP ON THE GO</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quibusdam!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Grid System/Rows and Column end -->
+  <!-- Footer start/Pages/Used Rows and Colums -->
+  <footer class="container footer-pages" role="article" aria-label="pages and payments gateways">
+    <!-- Row containing several columns -->
+    <div class="row pages">
+      <!-- Pages Col 1 -->
+      <div class="col policy-info">
+        <h6>POLICY INFO</h6>
+        <a href="#">
+          <p>Privacy Policy</p>
+        </a>
+        <a href="#">
+          <p>Terms of Sale</p>
+        </a>
+        <a href="#">
+          <p>Terms of Use</p>
+        </a>
+        <a href="#">
+          <p>Report Abuse & Takedown Policy</p>
+        </a>
+      </div>
+      <!-- Pages Col 2 -->
+      <div class="col company">
+        <h6>COMPANY</h6>
+        <a href="#">
+          <p>About Us</p>
+        </a>
+        <a href="#">
+          <p>Core Values</p>
+        </a>
+        <a href="#">
+          <p>Careers</p>
+        </a>
+        <a href="#">
+          <p>Blog</p>
+        </a>
+        <a href="#">
+          <p>Site Map</p>
+        </a>
+      </div>
+      <!-- Pages Col 3 -->
+      <div class="col sd-business">
+        <h6>SNAPDEAL BUSINESS</h6>
+        <a href="#">
+          <p>Shopping Apps</p>
+        </a>
+        <a href="#">
+          <p>Sell on Snapdeal</p>
+        </a>
+        <a href="#">
+          <p>Advertise on Snapdeal</p>
+        </a>
+        <a href="#">
+          <p>Media Enquiries</p>
+        </a>
+        <a href="#">
+          <p>Be an Affiliate</p>
+        </a>
+      </div>
+      <!-- Pages Col 4 -->
+      <div class="col need-help">
+        <h6>NEED HELP?</h6>
+        <a href="#">
+          <p>FAQ</p>
+        </a>
+        <a href="#">
+          <p>Contact Us</p>
+        </a>
+        <a href="#">
+          <p>Online Shopping</p>
+        </a>
+      </div>
+      <!-- Pages Col 5 -->
+      <div class="col subscribe">
+        <h6>SUBSCRIBE</h6>
+        <div class="email-container">
+          <input type="email" name="email" id="email" placeholder="Your Email Address">
+          <button type="button" id="subscribe-btn">Subscribe</button>
+        </div>
+        <p>Register now to get updates on promotions and coupons. Or <a href="#" id="dapp">Download App</a></p>
+      </div>
+    </div>
+    </div>
+    <!-- Pages Rows and Columns end -->
+    <!-- Another division of the footer contains several columns -->
+    <div class="container payment-social-container">
+      <div class="payment-gateways">
+        <h6>PAYMENT</h6>
+        <div class="payment-container">
+          <!-- Gateway 1 -->
+          <a href="#">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 2 -->
+          <a href="#">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 3 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 4 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 5 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+          <!-- Gateway 6 -->
+          <a href=" #">
+            <div class="payment-image-container">
+              <img src="https://cdn-icons-png.flaticon.com/128/893/893081.png" alt="" class="payment-image"
+                aria-hidden="true">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="social-container">
+        <div class="connect">
+          <h6>CONNECT</h6>
+        </div>
+        <div class="social-icons-container-1">
+          <a href="#"><span><i class="fab fa-facebook-f" id="fb"></i></span></a>
+          <a href="#"><span><i class="fab fa-youtube" id="yt"></i></span></a>
+          <a href="#"><span><i class="fab fa-twitter" id="tr"></i></span></a>
+          <a href="#"><span><i class="fab fa-instagram" id="in"></i></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Go to top icon -->
+
+  <span class="goto-top-icon" id="gotoTopCon"><i class="fas fa-chevron-circle-up" id="goto-top-icon"></i></span>
+
+  <!-- Modal Starts -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm modal-lg">
+      <div class="modal-content">
+        <div class="modal-body d-flex justify-content-center">
+          <section class="login-reg-container">
+            <div class="log-logo-container">
+              <img src="Images/logo.png" alt="Swag of India" class="log-logo">
+            </div>
+            <div class="log-reg">
+              <div class="toggler">
+                <button type="button" data-bs-target="#modal-carousel" data-bs-slide-to="0" class="active change btn-1"
+                  aria-current="true" aria-label="Slide 1" id="btn-1">LOGIN</button>
+                <button type="button" data-bs-target="#modal-carousel" data-bs-slide-to="1" class="btn-2"
+                  aria-label="Slide 2" id="btn-2">CREATE
+                  ACCOUNT</button>
+              </div>
+              <div id="modal-carousel" class="carousel slide">
+                <div class="carousel-inner middle-con">
+                  <!-- Item 1 -->
+                  <div class="carousel-item active mc1">
+                    <form action="">
+                      <div class="mc">
+                        <label>Email<span>*</span></label>
+                        <input type="email" name="email" id="email-log" class="inputs" required>
+                        <label>Password<span>*</span></label>
+                        <input type="password" name="pwd" id="pwd-log" class="inputs" pattern="[A-Za-z0-9]{8,16}"
+                          title="Your Password must have 8-16 characters. You can use either uppercase or lowercase or numeric values. Special Characters not allowed."
+                          required>
+                        <button type="submit" class="sign-in btn-submit">SIGN IN</button>
+                        <a href="#" class="fpwd">
+                          <p class="fpwd1">FORGOT YOUR PASSWORD</p>
+                        </a>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="carousel-item mc1">
+                    <form action="">
+                      <div class="mc">
+                        <label>Username<span>*</span></label>
+                        <input type="text" name="uname" id="uname-reg" class="inputs" required>
+                        <label>Email<span>*</span></label>
+                        <input type="email" name="email" id="email-reg" class="inputs">
+                        <label>Password<span>*</span></label>
+                        <input type="password" name="email" id="email-reg" class="inputs" pattern="[A-Za-z0-9]{8,16}"
+                          title="Your Password must have 8-16 characters with atleast one uppercase letter and numeric value. Special Characters not allowed."
+                          required>
+                        <button type="submit" class="create-acc btn-submit">CREATE ACCOUNT</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="social-log">
+                <p>Or Login With</p>
+                <div class="social-log-btn-container">
+                  <a href="#" class="fbk"><i class="fab fa-facebook-f"></i><span>FACEBOOK</span></a>
+                  <a href="#" class="twtr"><i class="fab fa-twitter"></i><span>TWITTER</span></a>
+                  <a href="#" class="ggl"><i class="fab fa-google-plus-g"></i><span>GOOGLE</span></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Ends -->
+
+    <script>
+      $(".myCarousel").owlCarousel({
+        responsive: {
+          0: {
+            items: 1,
+            nav: false
+          },
+
+          768: {
+            items: 2,
+            nav: false
+          },
+
+          992: {
+            items: 3,
+            nav: false
+          },
+
+        }
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
