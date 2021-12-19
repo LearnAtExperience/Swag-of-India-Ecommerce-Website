@@ -1,0 +1,85 @@
+{
+    "Products": [
+        {
+            "id": "1",
+            "name": "Trousers for Men",
+            "price": "999",
+            "priceAfterDiscount": "670",
+            "imageName": "product1",
+            "isNew": "TRUE",
+            "ratings": "3"
+        },
+        {
+            "id": "2",
+            "name": "Cotton T-shirt for Men",
+            "price": "859",
+            "priceAfterDiscount": "576",
+            "imageName": "product-2@2x",
+            "isNew": "FALSE",
+            "ratings": "4"
+        },
+        {
+            "id": "3",
+            "name": "Woolen Sweater for Girls",
+            "price": "1299",
+            "priceAfterDiscount": "870",
+            "imageName": "product3@2x",
+            "isNew": "TRUE",
+            "ratings": "2"
+        },
+        {
+            "id": "4",
+            "name": "Trousers for Men",
+            "price": "999",
+            "priceAfterDiscount": "670",
+            "imageName": "product1",
+            "isNew": "TRUE",
+            "ratings": "1"
+        },
+        {
+            "id": "5",
+            "name": "Cotton T-shirt for Men",
+            "price": "859",
+            "priceAfterDiscount": "576",
+            "imageName": "product-2@2x",
+            "isNew": "FALSE",
+            "ratings": "5"
+        },
+        {
+            "id": "6",
+            "name": "Woolen Sweater for Girls",
+            "price": "1299",
+            "priceAfterDiscount": "870",
+            "imageName": "product3@2x",
+            "isNew": "TRUE",
+            "ratings": "3"
+        },
+        {
+            "id": "7",
+            "name": "Trousers for Men",
+            "price": "999",
+            "priceAfterDiscount": "670",
+            "imageName": "product1",
+            "isNew": "TRUE",
+            "ratings": "3"
+        },
+        {
+            "id": "8",
+            "name": "Cotton T-shirt for Men",
+            "price": "859",
+            "priceAfterDiscount": "576",
+            "imageName": "product-2@2x",
+            "isNew": "FALSE",
+            "ratings": "4"
+        },
+        {
+            "id": "9",
+            "name": "Woolen Sweater for Girls",
+            "price": "1299",
+            "priceAfterDiscount": "870",
+            "imageName": "product3@2x",
+            "isNew": "TRUE",
+            "ratings": "2"
+        }
+    ]
+}
